@@ -1,7 +1,7 @@
 # helloworld
 
 This is the hello world example for TF controller.
-Assumeing that you have a Flux-ready cluster running, you can GitOps the resource here by defining a source (GitRepository), then defining a Terraform object and attach it to the source, like the following.
+Assuming that you have a Flux-ready cluster running, you can GitOps the resource here by defining a source (GitRepository), then defining a Terraform object and attach it to the source, like the following.
 
 ```yaml
 ---
