@@ -8,7 +8,7 @@ terraform {
 variable "subject" {
    type = string
    default = "World"
-   description = "Subject to hello"
+   description = "Subject to hello again"
 }
 
 output "hello_world" {
