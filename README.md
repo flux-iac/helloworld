@@ -5,7 +5,7 @@ Assuming that you have a Flux-ready cluster running, you can GitOps the resource
 
 ```yaml
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta1
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: helloworld
@@ -16,7 +16,7 @@ spec:
   ref:
     branch: main
 ---
-apiVersion: infra.contrib.fluxcd.io/v1alpha1
+apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:
   name: helloworld-tf
