@@ -21,7 +21,7 @@ spec:
         kind: HelmRepository
         name: tf-controller
       version: '>=0.2.5'
-  interval: 1h0s
+  interval: 15m0s
   releaseName: tf-controller
   targetNamespace: flux-system
   install:
