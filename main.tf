@@ -9,5 +9,5 @@ variable "subject" {
 }
 
 output "hello_world" {
-  value = "Hello Plan, ${var.subject}!"
+  value = "Hello Plan only, ${var.subject}!"
 }
