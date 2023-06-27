@@ -10,10 +10,9 @@ variable "secret_subject" {
 
 variable "subject" {
    type = string
-   default = "World"
    description = "Subject to hello"
 }
 
 output "hello_world" {
-  value = "Hello Plan plan, ${var.subject}! (secret: ${var.secret_subject})"
+  value = "Hello, ${var.subject}! (secret: ${var.secret_subject})"
 }
