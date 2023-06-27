@@ -9,7 +9,7 @@ variable "secret_subject" {
 }
 
 variable "subject" {
-   type = string
+   type = list
    description = "Subject to hello"
 }
 
