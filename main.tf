@@ -14,5 +14,6 @@ variable "subject" {
 }
 
 output "hello_world" {
+  sensitive = true
   value = "Hello, ${var.subject}! (secret: ${var.secret_subject})"
 }
