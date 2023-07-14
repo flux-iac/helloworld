@@ -2,6 +2,8 @@ terraform {
   required_version = ">= 0.12.26"
 }
 
+x
+
 variable "subject" {
    type = string
    default = "World"
