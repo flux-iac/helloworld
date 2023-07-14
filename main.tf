@@ -9,5 +9,5 @@ variable "subject" {
 }
 
 output "hello_world" {
-  value = "Hello branch demo, ${var.subject}!"
+  value = "Hello branch demo with source change, ${var.subject}!"
 }
