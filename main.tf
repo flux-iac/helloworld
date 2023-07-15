@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 0.12.26"
 }
 
-variable "subject xx" {
+variable "subject" {
    type = string
    default = "World"
    description = "Subject to hello"
