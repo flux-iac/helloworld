@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 0.12.26"
 }
 
-x
+y
 
 variable "subject" {
    type = string
