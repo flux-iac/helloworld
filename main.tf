@@ -1,5 +1,15 @@
 terraform {
   required_version = ">= 0.12.26"
+  rerqured_providers {
+    random = {
+      source = "hashicorp/random"
+      version = "3.5.1"
+    }
+  }
+}
+
+resource "random_password" "pwd" {
+  length = 12
 }
 
 variable "subject" {
