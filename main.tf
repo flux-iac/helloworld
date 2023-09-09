@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.12.26"
+  required_version = ">= 1.3.9"
 }
 
 variable "subject" {
@@ -8,6 +8,14 @@ variable "subject" {
    description = "Subject to hello"
 }
 
+resource "random_id" "id" {
+  keepers = {
+    trigger = var.subject
+  }
+
+  byte_length = 4
+}
+
 output "hello_world" {
-  value = "Hello branch demo with source change, ${var.subject}!"
+  value = "Hello World, ${var.subject} ${random_id.id.hex}!"
 }
